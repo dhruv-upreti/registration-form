@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Enrollment Form</title>
+</head>
+<body>
+    <h1>Course Enrollment Form</h1>
+    <form>
+        <fieldset>
+            <legend>Name</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+
+            <label>Hobbies:</label>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+            <label for="gaming">Gaming</label>
+            <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+            <label for="traveling">Traveling</label><br>
+
+            <label for="profile-picture">Upload Profile Picture:</label>
+            <input type="file" id="profile-picture" name="profile-picture"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Address</legend>
+            <label for="address-line-1">Street Address Line 1:</label>
+            <input type="text" id="address-line-1" name="address-line-1" required><br>
+
+            <label for="address-line-2">Street Address Line 2:</label>
+            <input type="text" id="address-line-2" name="address-line-2"><br>
+
+            <label for="city-state">City, State:</label>
+            <select id="city-state" name="city-state">
+                <option value="new-york">New York</option>
+                <option value="los-angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <!-- Add more options here -->
+            </select><br>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required><br>
+        </fieldset>
+
+        <label for="courses">Courses by Letsupgrade:</label>
+        <select id="courses" name="courses">
+            <option value="web-development">Web Development</option>
+            <option value="data-science">Data Science</option>
+            <option value="machine-learning">Machine Learning</option>
+            <!-- Add more options here -->
+        </select><br>
+
+        <label for="current-status">Currently:</label>
+        <input type="radio" id="student" name="current-status" value="student">
+        <label for="student">Student</label>
+        <input type="radio" id="working-professional" name="current-status" value="working-professional">
+        <label for="working-professional">Working Professional</label><br>
+
+        <label for="linkedin-profile">LinkedIn Profile:</label>
+        <input type="url" id="linkedin-profile" name="linkedin-profile"><br>
+
+        <h2>Why do you want to learn those courses?</h2>
+        <textarea id="course-motivation" name="course-motivation" rows="4" cols="50"></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
